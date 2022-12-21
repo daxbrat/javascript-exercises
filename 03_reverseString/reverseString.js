@@ -1,6 +1,8 @@
 let wordResultArr = [];
 const reverseString = function (normalWord) {
-  wordResultArr = normalWord.split(""); // [h,e,l,l,o, ,w,o,r,l,d]
+  wordResultArr = normalWord.split("");
+  wordResultArr.reverse();
+  return wordResultArr.join("");
 };
 
 // Do not edit below this line
