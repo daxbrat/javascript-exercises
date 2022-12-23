@@ -5,6 +5,12 @@ const sumAll = function (lowNum, highNum) {
     lowNum = highNum;
     highNum = numHolder;
   }
+  if (lowNum < 0 || highNum < 0) {
+    return "ERROR";
+  }
+  if (typeof lowNum != "number" || typeof highNum != "number") {
+    return "ERROR";
+  }
   for (let i = lowNum; i <= highNum; i++) {
     sum += i;
   }
